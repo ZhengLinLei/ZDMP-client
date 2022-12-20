@@ -1,0 +1,48 @@
+/*====================================================================================
+=====    ZDMP - Client server   ======================================================
+======================================================================================
+
+    Apache 2.0 License
+    Author: ZhengLinLei
+    Repository: https://github.com/ZhengLinLei/ZDMP-client
+    Version: 1.0.0
+        
+    
+    ZDMP Project:
+
+    The ZDMP project is a European project created by a consortium of 40 entities, 
+    whose main objective is to provide a reference digital platform for the achievement 
+    of the "zero defects" objective, with which it is intended to support quality 
+    improvement both both in processes and in products.
+
+    Manufacturing high-quality products at low cost is the best way for Europe to 
+    maintain leadership in the manufacturing industry and remain competitive in a global 
+    marketplace. This industry is in the midst of a digital transformation process, due 
+    to the proliferation and increase of new technological solutions, which are 
+    incorporated into the production chain to make it more efficient (Smart Factories 
+    and industry 4.0).
+    
+    This is a project that aims to provide a reference digital platform for the 
+    achievement of the "zero defects" objective, with which it is intended to support 
+    quality improvement both both in processes and in products. All of this content 
+    comes from itic.es ZDMP Datathon and Hackaton.
+
+
+    The project is divided into 3 parts:
+        - ZDMP Datasets : https://github.com/ZhengLinLei/ZDMP-datasets
+        - ZDMP Client   : https://github.com/ZhengLinLei/ZDMP-client
+        - ZDMP          : https://github.com/ZhengLinLei/ZDMP
+
+
+====================================================================================*/
+
+const express = require('express');
+// GET CONFIG
+const config = require('./server/config');
+
+// GENERATE SERVER
+const app = config(express());
+
+
+// CALL SERVER
+app.listen(app.get('port') , ()=> `Port in ${app.get('port')}`);
