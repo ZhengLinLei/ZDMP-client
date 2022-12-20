@@ -4,6 +4,15 @@
 [![GitHub issues](https://img.shields.io/github/issues/ZhengLinLei/ZDMP-client.svg)](https://github.com/ZhengLinLei/ZDMP-client/issues)
 [![GitHub forks](https://img.shields.io/github/forks/ZhengLinLei/ZDMP-client.svg)](https://github.com/ZhengLinLei/ZDMP-client/fork)
 
+
+![Client](./docs/dashboard.png)
+![Client](./docs/layer.png)
+![Client](./docs/config.png)
+![Client](./docs/models.png)
+![Client](./docs/terminal.png)
+![Client](./docs/profile.png)
+
+
 Client server repository for [ZDMP](https://github.com/ZhengLinLei/ZDMP) project.
 
 ## Installation
